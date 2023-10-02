@@ -11,7 +11,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(211, 208, 208);
+        }  
         td,th{
             border: 1px solid black;
             padding: 8px;
@@ -19,6 +26,14 @@
         thead,tfoot{
             background-color: gray;
             color: white;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(71, 70, 70);
         }
         .num{
             text-align: right;
@@ -30,6 +45,7 @@
     <!--
         Anatomia para tabelas grnades
         Table
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -38,10 +54,11 @@
                 TR,TD,TH
     -->
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,10 +173,22 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>203.062.512</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse inventore laboriosam nemo aperiam laborum animi, perferendis amet, reprehenderit eveniet culpa alias quaerat corrupti, suscipit accusamus maiores. Voluptate dolore assumenda recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quo, officia itaque voluptatem qui hic vero voluptatum maxime magnam velit! Aspernatur id blanditiis, esse corporis ad dignissimos ullam velit ipsam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate sint, ullam, eius, provident placeat et assumenda illo iste possimus neque doloremque ab veniam. Quasi, distinctio! Iusto voluptatibus accusantium vel quia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nostrum earum qui placeat praesentium quibusdam, ducimus esse tempora temporibus explicabo saepe numquam natus, debitis recusandae? Officiis iusto eaque assumenda molestias?</p>
 </body>
 </html>
